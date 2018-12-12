@@ -51,6 +51,8 @@ class App extends Component {
 
     return (
       <div>
+        <h1>My Events</h1>
+        <h2>Command Event</h2>
         <Input
           type="text"
           placeholder="name"
@@ -82,6 +84,7 @@ class App extends Component {
           Add Events
         </Button>
         <Button onClick={getListEvents}>Search Events</Button>
+        <h2>List of Events(More Detail Check it out console!)</h2>
         <ul>
           {events.map((event, index) => (
             <li key={index}>{event.name}</li>
